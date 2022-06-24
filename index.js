@@ -1,5 +1,11 @@
 // hold info for question
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
+const fs = require('fs');
+
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const renderTeam = require("./src/html-template");
 
 
 
@@ -131,18 +137,24 @@ const init = () => {
             },
         ])
         .then(answers => {
-            const interns = new Interns(
+            const intern = new Intern(
                 answers.id,
                 answers.name,
                 answers.email,
                 answers.school
             )
-            teamMemberObjectArr.push(interns)
+            teamMemberObjectArr.push(intern)
             addEmployees();
         })
-    };
+    };  
     }
-    createManager()
+
+    function buildTeam () {
+        fs.writeFile("./dist/index.html", renderTeam(teamMemberObjectArr), "utf-8")
+    }
+
+
+    createManager();
 };
 
 init ()
