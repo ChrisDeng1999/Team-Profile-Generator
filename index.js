@@ -141,24 +141,7 @@ const init = () => {
             addEmployees();
         })
     };
-
-    
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
     createManager()
 };
 
