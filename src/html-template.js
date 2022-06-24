@@ -1,5 +1,3 @@
-const Engineer = require("../lib/Engineer");
-
 const makeTeam = team => {
    
     const generateManagerCard = manager => {
@@ -10,7 +8,7 @@ const makeTeam = team => {
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">${manager.id}</li>
-          <a href = "mailto:${manager.email}"><li class="list-group-item">${manager.email}</li></a>
+          <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${manager.email}" target= "_blank"><li class="list-group-item">${manager.email}</li></a>
           <li class="list-group-item">${manager.officeNumber}</li>
         </ul>
         </div>
@@ -25,8 +23,8 @@ const makeTeam = team => {
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">${engineer.id}</li>
-          <a href = "mailto:${engineer.email}"><li class="list-group-item">${engineer.email}</li></a>
-          <li class="list-group-item">https://github.com/${engineer.github}</li>
+          <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${engineer.email}" target= "_blank"><li class="list-group-item">${engineer.email}</li></a>
+          <a href = "https://github.com/${engineer.github}" target = "_blank"><li class="list-group-item">https://github.com/${engineer.github}</li></a>
         </ul>
         </div>
         `
@@ -40,7 +38,7 @@ const makeTeam = team => {
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">${intern.id}</li>
-          <a href = "mailto:${intern.email}"><li class="list-group-item">${intern.email}</li></a>
+          <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=:${intern.email}" target= "_blank"><li class="list-group-item">${intern.email}</li></a>
           <li class="list-group-item">${intern.school}</li>
         </ul>
         </div>
@@ -82,6 +80,7 @@ module.exports = team => {
     <title>Team Memeber Generator</title>
 </head>
 <body>
+  <header class = "d-flex align-items-center justify-content-center bg-danger text-white fs-1" style = "height: 13vh">My Team</header>
     ${makeTeam(team)}
 </body>
 </html>

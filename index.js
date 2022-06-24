@@ -1,11 +1,11 @@
 // hold info for question
-const inquirer = require("inquirer");
-const fs = require('fs');
+const inquirer = require("inquirer")
+const fs = require('fs')
 
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const renderTeam = require("./src/html-template");
+const Manager = require("./lib/Manager")
+const Engineer = require("./lib/Engineer")
+const Intern = require("./lib/Intern")
+const renderTeam = require("./src/html-template")
 
 
 
