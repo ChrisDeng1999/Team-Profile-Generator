@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/ChrisDeng1999/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.0.0",
-    "require": "^2.4.20"
+    "inquirer": "^8.2.4",
+    "require": "^0.4.4"
   },
   "devDependencies": {
     "jest": "^28.1.1"

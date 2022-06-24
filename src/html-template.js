@@ -24,8 +24,8 @@ const makeTeam = team => {
           <h5 class="card-title">${engineer.name}</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${enginee.id}</li>
-          <a href = "mailto:${enginee.email}"><li class="list-group-item">${enginee.email}</li></a>
+          <li class="list-group-item">${engineer.id}</li>
+          <a href = "mailto:${engineer.email}"><li class="list-group-item">${engineer.email}</li></a>
           <li class="list-group-item">https://github.com/${engineer.github}</li>
         </ul>
         </div>

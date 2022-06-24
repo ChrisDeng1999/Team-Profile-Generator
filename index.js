@@ -150,11 +150,15 @@ const init = () => {
     }
 
     function buildTeam () {
-        fs.writeFile("./dist/index.html", renderTeam(teamMemberObjectArr), "utf-8")
+        fs.writeFile("./dist/index.html", renderTeam(teamMemberObjectArr), (err) => {
+            if (err)
+              console.log(err);
+            else {
+                console.log("You successfully added your team members!");
+            }
+    })
     }
-
-
     createManager();
-};
+}
 
-init ()
+init()
