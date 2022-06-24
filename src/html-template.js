@@ -3,13 +3,13 @@ const makeTeam = team => {
     const generateManagerCard = manager => {
         return `
         <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">${manager.name}</h5>
+        <div class="card-body text-white bg-primary">
+          <h5 class="card-title fs-2">${manager.name} ♚Manager</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${manager.id}</li>
-          <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${manager.email}" target= "_blank"><li class="list-group-item">${manager.email}</li></a>
-          <li class="list-group-item">${manager.officeNumber}</li>
+          <li class="list-group-item">ID: ${manager.id}</li>
+          <li class="list-group-item">Email: <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${manager.email}" target= "_blank">${manager.email}</a></li>
+          <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
         </ul>
         </div>
         `
@@ -18,13 +18,13 @@ const makeTeam = team => {
     const generateEngineerCard = engineer => {
         return `
         <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">${engineer.name}</h5>
+        <div class="card-body text-white bg-primary">
+          <h5 class="card-title fs-2">${engineer.name} ♞Engineer</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${engineer.id}</li>
-          <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${engineer.email}" target= "_blank"><li class="list-group-item">${engineer.email}</li></a>
-          <a href = "https://github.com/${engineer.github}" target = "_blank"><li class="list-group-item">https://github.com/${engineer.github}</li></a>
+          <li class="list-group-item">ID: ${engineer.id}</li>
+          <li class="list-group-item">Email: <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${engineer.email}" target= "_blank">${engineer.email}</a></li>
+          <li class="list-group-item">GitHub: <a href = "https://github.com/${engineer.github}" target = "_blank">https://github.com/${engineer.github}</a></li>
         </ul>
         </div>
         `
@@ -33,13 +33,13 @@ const makeTeam = team => {
     const generateInternCard = intern => {
         return `
         <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">${intern.name}</h5>
+        <div class="card-body text-white bg-primary">
+          <h5 class="card-title fs-2">${intern.name} ♟️Intern</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${intern.id}</li>
-          <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=:${intern.email}" target= "_blank"><li class="list-group-item">${intern.email}</li></a>
-          <li class="list-group-item">${intern.school}</li>
+          <li class="list-group-item">ID: ${intern.id}</li>
+          <li class="list-group-item">Email: <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${intern.email}" target= "_blank">${intern.email}</a></li>
+          <li class="list-group-item">School:${intern.school}</li>
         </ul>
         </div>
         `
