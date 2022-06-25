@@ -4,7 +4,8 @@ const makeTeam = team => {
         return `
         <div class="card" style="width: 18rem;">
         <div class="card-body text-white bg-primary">
-          <h5 class="card-title fs-2">${manager.name} ♚Manager</h5>
+          <h5 class="card-title fs-2">${manager.name}</h5>
+          <h5 class="card-title fs-2">♚ Manager</h5>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${manager.id}</li>
@@ -19,7 +20,8 @@ const makeTeam = team => {
         return `
         <div class="card" style="width: 18rem;">
         <div class="card-body text-white bg-primary">
-          <h5 class="card-title fs-2">${engineer.name} ♞Engineer</h5>
+          <h5 class="card-title fs-2">${engineer.name}</h5>
+          <h5 class="card-title fs-2">♞ Engineer</h5>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${engineer.id}</li>
@@ -34,12 +36,13 @@ const makeTeam = team => {
         return `
         <div class="card" style="width: 18rem;">
         <div class="card-body text-white bg-primary">
-          <h5 class="card-title fs-2">${intern.name} ♟️Intern</h5>
+          <h5 class="card-title fs-2">${intern.name}</h5>
+          <h5 class="card-title fs-2">♙ Intern</h5>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${intern.id}</li>
           <li class="list-group-item">Email: <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${intern.email}" target= "_blank">${intern.email}</a></li>
-          <li class="list-group-item">School:${intern.school}</li>
+          <li class="list-group-item">School: ${intern.school}</li>
         </ul>
         </div>
         `
